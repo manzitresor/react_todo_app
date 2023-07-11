@@ -1,5 +1,7 @@
 /* eslint-disable react/prop-types */
 import React, { useState } from 'react';
+import { BsArchiveFill } from 'react-icons/bs';
+import { FaEdit } from 'react-icons/fa';
 import styles from '../styles/TodoItem.module.css';
 
 const TodoItem = ({
@@ -39,8 +41,8 @@ const TodoItem = ({
             checked={todo.completed}
             onChange={() => handleChange(todo.id)}
           />
-          <button type="submit" onClick={handleEditing}>Edit</button>
-          <button type="submit" onClick={() => handleDelete(todo.id)}>Delete</button>
+          <FaEdit onClick={handleEditing} className={styles.btn} />
+          <BsArchiveFill onClick={() => handleDelete(todo.id)} className={styles.btn} />
           <span style={todo.completed ? completedStyle : null}>
             {todo.title}
           </span>

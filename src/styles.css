@@ -72,3 +72,7 @@ a {
   font-size: 17px;
   padding: 10px;
 }
+
+.items-content {
+  padding: 0;
+}

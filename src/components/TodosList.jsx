@@ -6,7 +6,7 @@ const TodosList = ({
   todos, handleChange, handleDelete, setUpdate,
 }) => (
   <div>
-    <ul>
+    <ul className="items-content">
       {
             todos.map((todo) => (
               <TodoItem

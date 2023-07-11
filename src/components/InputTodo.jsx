@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { FaPlusSquare } from 'react-icons/fa';
 
 // eslint-disable-next-line react/prop-types
 const InputTodo = ({ addTodoItem }) => {
@@ -29,7 +30,11 @@ const InputTodo = ({ addTodoItem }) => {
           onChange={handleInputChange}
           className="input-text"
         />
-        <button className="input-submit" type="submit">submit</button>
+
+        <button className="input-submit" type="submit">
+          {' '}
+          <FaPlusSquare />
+        </button>
       </form>
       <span className="submit-warning">{message}</span>
 
