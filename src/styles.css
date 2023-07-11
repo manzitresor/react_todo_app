@@ -56,7 +56,8 @@ a {
   color: #333;
   text-decoration: none;
 }
-.navbar{
+
+.navbar {
   display: flex;
   float: right;
   margin: 2% 10%;
