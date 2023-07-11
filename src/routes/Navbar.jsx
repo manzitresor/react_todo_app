@@ -9,13 +9,15 @@ const links = [
 
 const Navbar = () => (
   <>
-    {
+    <ul className="navbar">
+      {
         links.map((link) => (
           <li key={link.text} className="nav-list">
             <NavLink to={link.path}>{link.text}</NavLink>
           </li>
         ))
       }
+    </ul>
   </>
 );
 export default Navbar;

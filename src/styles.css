@@ -1,6 +1,6 @@
 .wrapper {
   width: 100%;
-  padding: 8rem 20px 3rem;
+  padding: 4rem 20px 3rem;
 }
 
 .todos {
@@ -55,6 +55,11 @@
 a {
   color: #333;
   text-decoration: none;
+}
+.navbar{
+  display: flex;
+  float: right;
+  margin: 2% 10%;
 }
 
 /* Active route */

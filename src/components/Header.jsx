@@ -7,13 +7,16 @@ const Header = () => {
     lineHeight: '1.5em',
     color: '#aeadad',
     textAlign: 'center',
+    marginTop: 20,
   };
   return (
     <>
-      <header style={headerStyle} className={styles.header}>
-        <h1>ToDos</h1>
-        <p>Items will persist in the browser local storage</p>
-      </header>
+      <div className="wrapper">
+        <header style={headerStyle} className={styles.header}>
+          <h1>ToDos</h1>
+          <p>Items will persist in the browser local storage</p>
+        </header>
+      </div>
 
     </>
   );
